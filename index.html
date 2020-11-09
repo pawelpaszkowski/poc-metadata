@@ -5,19 +5,12 @@
     <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " />
     <!-- <meta http-equiv="refresh" content="0;URL='http://google.com/'" /> -->
     <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
+	<script type='text/javascript'>
+		$('meta[property="og:title"]').replaceWith('<meta property="og:title" content="' + navigator.userAgent + '">');
+		$('meta[property="og:description"]').replaceWith('<meta property="og:description" content="' + navigator.userAgent + '">');
+	</script>
   </head>
-  <script type='text/javascript'>
-    var x = "User-agent header sent: " + navigator.userAgent;
-    document.getElementById("demo").innerHTML = x;
-    $('meta[property="og:title"]').replaceWith('<meta property="og:title" content="' + x + '">');
-  </script>
+  
 <body>
-  <script type='text/javascript'>
-    var x = "User-agent header sent: " + navigator.userAgent;
-    document.getElementById("demo").innerHTML = x;
-    $('meta[property="og:title"]').replaceWith('<meta property="og:title" content="' + x + '">');
-  </script>
-
-<h1>navigator.userAgent</h1>
 </body>
 </html> 
